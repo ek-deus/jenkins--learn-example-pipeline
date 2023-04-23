@@ -7,10 +7,10 @@ pipeline {
                 script {
                     echo 'script..'
                     def libLoop = load 'utils/loop.groovy'
-                    libLoop.getInfoGit('https://github.com/elestopadov/jenkins-course-example.git')
+                    libLoop.getInfoGit('https://github.com/ek-deus/jenkins--learn-example-pipeline.git')
                     libLoop.loopMethod()
 
-                    libLoop.getInfoGitBranch('https://github.com/elestopadov/jenkins-course-example.git')
+                    libLoop.getInfoGitBranch('https://github.com/ek-deus/jenkins--learn-example-pipeline.git')
                 }
             }
         }
